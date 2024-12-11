@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tablero 5x5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <button onclick="playSound()">Reproducir sonido</button>
+    <div id="tablero"></div>
+    <script src="script.js"></script>
+	
+	<script>
+    // Seleccionar todas las celdas de la tabla
+    const celdas = document.querySelectorAll('td');
+
+    // Función a ejecutar cuando se hace clic en una celda
+    function handleClick(event) {
+        console.log('Hiciste clic en la celda:', event.target.textContent);
+		alert('Hiciste clic en la celda ' + event.target.textContent);
+        // Aquí puedes agregar tu código para realizar alguna acción, por ejemplo:
+        // - Cambiar el color de la celda
+        // - Mostrar un mensaje de alerta
+        // - Redirigir a otra página
+		
+    }
+
+    // Agregar el evento de clic a cada celda
+	
+    celdas.forEach(celda => {
+        celda.addEventListener('click', handleClick);
+    });
+</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+

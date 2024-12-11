@@ -1,0 +1,17 @@
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.celda {
+    border: 1px solid black;
+    text-align: center;
+
+  padding: 10px;
+/* border-collapse: collapse;*/
+ border-collapse: separate
+  border-spacing: 0;
+
+
+}
